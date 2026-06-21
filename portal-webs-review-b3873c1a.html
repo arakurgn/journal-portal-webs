@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乐鱼体育 · 再次遇见</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f8fafb;
+      color: #1e293b;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .nav {
+      max-width: 760px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 1.2rem 1.5rem 0.6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e9edf2;
+    }
+    .nav-brand {
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #475569;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: #1e293b; }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.8rem 1.5rem 4rem;
+      width: 100%;
+      flex: 1;
+    }
+    .hero {
+      margin-bottom: 2.8rem;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 650;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+    }
+    .hero h1 small {
+      display: block;
+      font-size: 0.7em;
+      font-weight: 400;
+      color: #64748b;
+      margin-top: 0.2rem;
+      letter-spacing: 0.02em;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: #334155;
+      margin: 1.2rem 0 0;
+      max-width: 580px;
+    }
+    .intro-snippet {
+      background: #f1f5f9;
+      padding: 1.4rem 1.6rem;
+      border-radius: 12px;
+      margin: 1.6rem 0 2.4rem;
+      font-size: 0.95rem;
+      border-left: 4px solid #94a3b8;
+    }
+    .intro-snippet a {
+      color: #1e293b;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-weight: 500;
+    }
+    .intro-snippet a:hover {
+      color: #0f172a;
+      text-decoration-thickness: 2px;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin: 2.2rem 0 0.8rem;
+      padding-top: 0.4rem;
+      border-top: 1px solid #e2e8f0;
+    }
+    .scene-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1.2rem 0 2rem;
+    }
+    .scene-card {
+      background: #ffffff;
+      border: 1px solid #e9edf2;
+      border-radius: 14px;
+      padding: 1.2rem 1.4rem;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .scene-card:hover {
+      border-color: #cbd5e1;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    .scene-card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      color: #0f172a;
+    }
+    .scene-card p {
+      font-size: 0.92rem;
+      color: #475569;
+      margin: 0;
+    }
+    .faq-section {
+      margin: 2.4rem 0 1.2rem;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e9edf2;
+      padding: 0.9rem 0;
+    }
+    .faq-item:first-of-type {
+      border-top: 1px solid #e9edf2;
+    }
+    .faq-q {
+      font-weight: 500;
+      font-size: 0.96rem;
+      margin-bottom: 0.2rem;
+    }
+    .faq-a {
+      font-size: 0.9rem;
+      color: #475569;
+    }
+    .footnote {
+      margin-top: 2.4rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e2e8f0;
+      font-size: 0.82rem;
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .footnote a {
+      color: #475569;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    @media (max-width: 540px) {
+      .nav { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+      .nav-links { gap: 1.2rem; }
+      .hero h1 { font-size: 1.7rem; }
+      main { padding: 1.8rem 1.2rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-brand">乐鱼体育</div>
+    <div class="nav-links">
+      <a href="#intro">关于</a>
+      <a href="#scenes">场景</a>
+      <a href="#faq">常见说明</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>
+        再次访问 · 持续关注
+        <small>轻量导航式 · 乐鱼体育</small>
+      </h1>
+      <p>
+        对于经常使用 <a href="https://portal-webs-leyu.com.cn">乐鱼体育</a> 的用户，
+        保持浏览路径的熟悉与高效尤为重要。本页从再次访问、收藏及持续关注的角度，
+        整理出三个核心使用场景及常见说明，方便快速定位。
+      </p>
+    </section>
+
+    <div class="intro-snippet" id="intro">
+      <strong>关于此页：</strong> 围绕 <a href="https://portal-webs-leyu.com.cn">乐鱼体育</a> 的日常使用，
+      我们提炼了三个典型场景——快速回访、内容收藏与动态追踪。每个场景对应具体的操作提示，
+      旨在减少重复查找，提升信息获取效率。以下内容均基于平台现有功能进行说明。
+    </div>
+
+    <h2 id="scenes">三个使用场景</h2>
+    <div class="scene-grid">
+      <div class="scene-card">
+        <h3>① 快速回访 · 保持入口在手边</h3>
+        <p>
+          将 <a href="https://portal-webs-leyu.com.cn">乐鱼体育</a> 添加至浏览器书签或桌面快捷方式，
+          可减少每次输入地址的步骤。对于高频访问用户，建议使用浏览器收藏夹进行归类管理，
+          或借助浏览器同步功能在多设备间保持一致。
+        </p>
+      </div>
+      <div class="scene-card">
+        <h3>② 内容收藏 · 构建个人信息库</h3>
+        <p>
+          浏览赛事资讯、数据文章或专题时，可利用浏览器「阅读列表」或第三方笔记工具进行摘录。
+          直接复制链接或使用浏览器内置的「收藏网页」功能，将感兴趣的内容统一存放，
+          方便后续回顾。注意定期整理，避免信息过载。
+        </p>
+      </div>
+      <div class="scene-card">
+        <h3>③ 动态追踪 · 掌握更新节奏</h3>
+        <p>
+          对于赛事日历、实时比分或新闻动态，建议开启浏览器页面自动刷新（如每 60 秒），
+          或使用 RSS 订阅（若站点支持）。同时可以关注平台内嵌的「关注」或「提醒」功能，
+          第一时间获取关键变动，无需反复手动刷新。
+        </p>
+      </div>
+    </div>
+
+    <h2 id="faq">常见说明</h2>
+    <div class="faq-section">
+      <div class="faq-item">
+        <div class="faq-q">Q：如何确认当前页面为最新版本？</div>
+        <div class="faq-a">建议定期清理浏览器缓存，或使用无痕窗口进行对比。平台内容会持续更新，具体状态以实际页面为准。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q：收藏的链接失效怎么办？</div>
+        <div class="faq-a">若遇到链接无法访问，请优先核对地址是否完整。也可通过搜索引擎输入「乐鱼体育」查找最新入口，注意核对域名。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q：是否需要注册才能浏览全部内容？</div>
+        <div class="faq-a">部分基础内容可公开访问，特定功能或个性化推荐可能需登录。具体权限以平台实际划分为准。</div>
+      </div>
+    </div>
+
+    <div class="footnote">
+      <span>© 乐鱼体育 · 信息导航</span>
+      <span>
+        <a href="https://portal-webs-leyu.com.cn">乐鱼体育</a>
+        <span style="margin-left: 0.6rem; opacity: 0.5;">| 持续关注</span>
+      </span>
+    </div>
+  </main>
+</body>
+</html>
